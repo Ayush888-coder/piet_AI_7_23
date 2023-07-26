@@ -45,3 +45,29 @@ unordered collection of unique items
  #git add.
  #git commit -m "First commit"
 #push the changes 
+#data class
+'awesome'.join('jai shree Ram')
+# string types
+  Ordinary String
+  F- string 
+  Raw string 
+  byte SyntaxWarning
+#List functions
+e.append(50);print(e)
+print(e.count(10))
+e.extend({4,6,2,3};print(e))
+print(e.index(4))
+e.insert(e.pop());print(e)
+e.remove(6);print(e)
+e.reverse();print(e)
+e.sort();print(e)
+
+e1=e.copy()
+e2=e
+#e.clear
+
+#Control satements
+ Conditional
+ looping
+ error control statements
+ ##suits
