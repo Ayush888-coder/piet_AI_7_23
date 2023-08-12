@@ -21,7 +21,7 @@ def register():
     import login_admin
     
 
-def attendance():
+def attendance(): 
     
     print('attendance')
 
