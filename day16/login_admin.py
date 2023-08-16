@@ -40,17 +40,16 @@ def submit():
 
             if op == 'register':
                 from tkinter.simpledialog import askstring
-                name= askstring('Name whom you want to register','Name whom you want to register')
+                name = askstring('Name','For whom you want to register?')                
                 import register_face as rf
                 rf.register(name)
             elif op == 'clear':
-                print('clear data')
                 import clear_data
 
 
         else:
             print('login failed')
-            mb.showinfo('Error','Login Failed')
+            mb.showerror('Error','Login Failed')
 
 
 
@@ -63,13 +62,12 @@ ttk.Button(
 def back():
     login_app.destroy()
     with open('opr','w') as f:
-        op =f.write()
+        op =f.write('')
     import app
 
 ttk.Button(
     login_app,text='Back',font=font_,command=back,
     height=2,width=10,bg='#BFC9CA',
-    
-).place(x=20,y=350)
+).place(x=250,y=300)
 
 login_app.mainloop()
