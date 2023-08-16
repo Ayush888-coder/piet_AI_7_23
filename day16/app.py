@@ -42,4 +42,5 @@ ttk.Button(
 ttk.Button(app, text='Clear Data',command=clear_data,font=font_,
     height=3,width=15,background='#D4AC0D').pack()
 
+
 app.mainloop()
