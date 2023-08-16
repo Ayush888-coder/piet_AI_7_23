@@ -1,5 +1,6 @@
 import tkinter as ttk
 from tkinter import font
+from tkinter import messagebox as mb
 login_app=ttk.Tk()
 login_app.title('Register')
 login_app.geometry('600x400')
@@ -31,10 +32,25 @@ def submit():
         userid = uname.get()
         password= pwd.get()
         p= open('pwd').read()
+        uname.set('')
+        pwd.set('')
         if userid =='admin' and password == p:
             print('login succesful')
+            mb.showinfo('Success','Login Successful')
+
+            if op == 'register':
+                from tkinter.simpledialog import askstring
+                name= askstring('Name whom you want to register','Name whom you want to register')
+                import register_face as rf
+                rf.register(name)
+            elif op == 'clear':
+                print('clear data')
+                import clear_data
+
+
         else:
             print('login failed')
+            mb.showinfo('Error','Login Failed')
 
 
 
